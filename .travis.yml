@@ -7,7 +7,7 @@ install:
   - sudo unzip /tmp/src*.zip -d /usr/local/bin
   - sudo mv /usr/local/bin/src-* /usr/local/bin/src
   - sudo chmod +x /usr/local/bin/src
-  - src toolchain add sourcegraph.com/sourcegraph/srclib-sample
+  - src toolchain add sourcegraph.com/sourcegraph/srclib-scala
 before_script:
   - echo nothing to do
 script:
