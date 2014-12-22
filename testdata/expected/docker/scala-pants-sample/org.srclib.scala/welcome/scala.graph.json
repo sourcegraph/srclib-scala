@@ -1,0 +1,30 @@
+{
+  "Defs": [
+    {
+      "UnitType": "scala",
+      "Unit": ".",
+      "Path": "WelcomeEverybody",
+      "TreePath": "WelcomeEverybody",
+      "Name": "WelcomeEverybody",
+      "Kind": "class",
+      "File": "Welcome.scala",
+      "DefStart": 37,
+      "DefEnd": 141,
+      "Exported": true,
+      "Local": false
+    }
+  ],
+  "Refs": [
+    {
+      "DefRepo": "",
+      "DefUnitType": "",
+      "DefUnit": "",
+      "DefPath": "WelcomeEverybody",
+      "Def": true,
+      "Repo": "",
+      "File": "Welcome.scala",
+      "Start": 44,
+      "End": 60
+    }
+  ]
+}

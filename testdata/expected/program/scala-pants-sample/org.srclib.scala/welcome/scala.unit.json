@@ -1,0 +1,1 @@
+{"Name":"org.srclib.scala/welcome","Type":"scala","Repo":"github.com/sgtest/scala-pants-sample","Globs":null,"Files":["Welcome.scala"],"Dir":"","Dependencies":[{"name":"mydep"}],"Ops":{"depresolve":null,"graph":null}}
