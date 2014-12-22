@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# srclib-scala is a very simple stub toolchain that prints out
+# hardcoded data similar to what would be emitted by a real Scala
+# toolchain for the github.com/sgtest/scala-pants-sample repository.
+
+case $1 in
+    scan)
+        if [[ -f BUILD && -f Welcome.scala ]]; then
+            echo '[{"Type":"scala","Name":"org.srclib.scala/welcome","Files":["Welcome.scala"],"Dependencies":[{"name":"mydep"}],"Ops":{"graph":null,"depresolve":null}}]'
+        else
+            echo '[]'
+        fi
+        ;;
+    graph)
+        echo '{"Defs":[{"Repo":"","UnitType":"scala","Unit":".","Path":"WelcomeEverybody","Name":"WelcomeEverybody","File":"Welcome.scala","DefStart":37,"DefEnd":141,"Exported":true,"Kind":"class","TreePath":"WelcomeEverybody"}],"Refs":[{"DefPath":"WelcomeEverybody","File":"Welcome.scala","Start":44,"End":60,"Def":true}],"Docs":[]}'
+        ;;
+    depresolve)
+        echo '[{"Raw":{"name":"mydep"},"Target":{"ToRepoCloneURL":"https://github.com/example/repo"}}]'
+        ;;
+    *)
+        echo Unknown command: $1 >&2
+        exit 1
+        ;;
+esac
